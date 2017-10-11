@@ -27,4 +27,4 @@ data.reshaped$TheoreticalQuantity <- as.numeric(data.reshaped$TheoreticalQuantit
 
 data<-data.reshaped
 data.reshaped.copy1<-data
-rm(data.reshaped,df)
+rm(data.reshaped)
