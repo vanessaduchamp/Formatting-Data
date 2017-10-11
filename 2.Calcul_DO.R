@@ -8,7 +8,7 @@
 data.hom<-subset(data, is.na(data$Allele.2))
 data.het<-subset(data,!is.na(data$Allele.2))
 
-# /!\ If you are using only heterozygous data (by example DNA007), you need to skip the part below on homozygous
+# /!\ If you are using only heterozygous data (by example DNA007), you will receive the following warning
 if (is.data.frame(data.hom) && nrow(data.hom)==0) warning("no homozygous data")
 
 ####################################### 
