@@ -69,6 +69,7 @@ data$Size.2<-as.numeric(data$Size.2)
 data$Height.2<-as.numeric(data$Height.2)
 data$Peak.Area.2<-as.numeric(data$Peak.Area.2)
 
-
+# we make a backup of the dataframe "data"
+data.copy0<-data 
 
 
