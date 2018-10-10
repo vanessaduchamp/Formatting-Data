@@ -17,6 +17,10 @@ data.reshaped$H.scale<-scale(data.reshaped$H,center = TRUE,scale = TRUE)
 data.reshaped$Est.bp1.scale<-scale(data.reshaped$Est.bp1,center = TRUE,scale = TRUE)
 data.reshaped$Size.1.scale<-scale(data.reshaped$Size.1,center = TRUE,scale = TRUE)
 
+# taking the LOG value for the H and Estbp
+data.reshaped$LogH<-log(data.reshaped$H)
+data.reshaped$LogEstbp<-log(data.reshaped$Est.bp1)
+
 # Extracting from Sample.Name, the sample number (removing information about replica)
 data.reshaped$Sample.N<-gsub("(.*-.*)-.*","\\1",data.reshaped$Sample.Name)
 rownames(data.reshaped)<-NULL
